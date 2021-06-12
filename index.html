@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--navigation-->
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav item">Acceuil</a></li>
+            <li><a href="#gallerie" class="nav item">Gallerie</a></li>
+            <li><a href="#booking" class="nav item">Réservation</a></li>
+            <li><a href="#contact" class="nav item">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- home-->
+    <div id="home" class="hero">
+        <div class="home-left">
+            <h1>SurleVolant</h1>
+            <p>Votre <strong>agence de location de véhicules.</strong></p>
+            <p>Louer une véhicule avec <strong> SurLeVolant </strong>!</p>
+            <p>Un large choix vous attend! </p>
+            <div class="btn-hero">
+                <a href="#" class="btn-home b1">Découvrir</a>
+                <a href="#" class="btn-home b2">Réserver</a>
+
+            </div>
+        </div>
+        <div class="home-right"></div>
+    </div>
+    <!--INFOS-->
+
+    <h2  id="gallerie" class="info-title">Gallerie</h2>
+    <section class="info-section" id="infos">
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/biker.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/moto4.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/motocycle.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/motocycle.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/motocycle.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/motocycle.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="container-info-photo">
+                <img src="media/motocycle.jpg" alt="">
+            </div>
+            <h2>VOITURE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ab vitae ipsum tempora. Sunt magnam
+                aliquid ipsam distinctio! Adipisci atque dignissimos, beatae provident tempora fugiat alias cupiditate
+                cum tempore quasi.</p>
+        </div>
+    </section>
+
+
+    <!--reservation-->
+
+    <h2 id="booking" class="booking-title">Réservation</h2>
+    <form>
+        
+            <label for="vehicule">Choisissez un type de véhicule </label><br>
+            <select id="vehicule" onchange="verifier_list()">
+                <option value="">--Choisissez une option--</option>
+                <option value="Moto"> Moto</option>
+                <optgroup label="Manuelle"></optgroup>
+                <option value="Citadine"> Citadine</option>
+                <option value="Compact"> Compact</option>
+                <option value="Utilitaire"> Utilitaire</option>
+                <option value="Engin de chantier"> Engin de chantier</option>
+                <optgroup label="Automatique">
+                <option value="Berline"  checked>Berline</option>
+                <option value="Camion">Camion</option>
+            </optgroup>
+            </select>
+        
+            <label for="carburent">Carburant</label><br>
+            <select id="carburant" onchange="chekCarburant()">
+            <option value="">--Choisissez une option--</option>
+            </select>
+        
+            <label for="nombre-jours">Durée de réservation</label><br>
+            <input type="number" name="nombre-jours" id="nombre-jours" required min="1" max="365"><br>
+       
+            <label>Totale d'estimation</label><br>
+            <input id="btn-res" type="button" id="btn" value="Tarif">
+    
+            <input type="text" disabled value="" id="reslt" />
+       
+    </form>
+   
+
+
+
+    <!--Parallax -->
+    <section class="parallax">
+        <p class="parallax-txt">UN LARGE CHOIX</p>
+    </section>
+
+
+    <!--contact section-->
+
+
+    <h2 class="contact-title"> Contact </h2>
+
+    <section id="contact">
+        <form>
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet">
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+
+            <button class="contact-btn" type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!--Footer -->
+    <footer>
+        <p>all right reserved - 2021</p>
+    </footer>
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
